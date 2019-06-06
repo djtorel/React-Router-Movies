@@ -18,7 +18,11 @@ const MovieCard = ({ movie: { title, director, metascore, stars }, save }) => (
         </div>
       ))}
     </div>
-    {save && <div className="save-button">Save</div>}
+    {save && (
+      <div className="save-button" onClick={save}>
+        Save
+      </div>
+    )}
   </div>
 );
 
